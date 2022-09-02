@@ -10,26 +10,50 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+* {
+  color: rgb(191, 191, 191) !important;
+}
 
 i {
   cursor: pointer;
 }
-* {
-  color: rgb(191, 191, 191) !important;
+
+i:hover {
+  color: rgb(255, 255, 255) !important;
 }
 
 .footer a {
   text-decoration: none;
 }
 
+a:hover {
+  color: rgb(255, 255, 255) !important;
+}
+
 .footer button {
   border: 2px solid rgb(191, 191, 191);
+}
+
+.footer button:hover {
+  border: 2px solid rgb(255, 255, 255);
+  color: white !important;
 }
 
 .alert {
   color: rgb(255, 66, 66) !important;
 }
 
-.hamburger {
-  color: rgb(191, 191, 191) !important;
+.poster {
+  transition: 500ms;
+  cursor: pointer;
+}
+
+.poster:hover {
+  transform: scale(0.9);
+  transition: 500ms;
+}
+
+#kids:hover {
+  color: rgb(255, 255, 255) !important;
+  cursor: pointer;
 }

@@ -43,7 +43,7 @@ class Gallery extends Component {
           {this.state.Movies &&
             this.state.Movies.Search.map((movie) => (
               <Carousel.Item key={movie.imdbID}>
-                <img className="h-100" width="100%" src={movie.Poster} alt="" />
+                <img className="h-100 poster" width="100%" src={movie.Poster} alt="" />
               </Carousel.Item>
             ))}
         </Carousel>
