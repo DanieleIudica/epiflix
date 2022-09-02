@@ -5,7 +5,7 @@ class Top extends Component {
   render() {
     return (
       <Container>
-        <Navbar expand="lg" variant="light">
+        <Navbar expand="lg" variant="dark">
           <Navbar.Brand href="#">TV Shows</Navbar.Brand>
           <Nav>
             <NavDropdown id="nav-dropdown-dark-example" title="Genres" menuVariant="dark">

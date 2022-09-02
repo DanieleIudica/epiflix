@@ -4,7 +4,7 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 class NavBar extends Component {
   render() {
     return (
-      <Navbar expand="lg">
+      <Navbar expand="lg" variant="dark">
         <Container>
           <Navbar.Brand href="logo">
             <img src="./logo.png" style={{ width: "110px", height: "60px" }} alt="Log" />

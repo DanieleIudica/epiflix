@@ -10,9 +10,6 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
-* {
-  color: rgb(191, 191, 191) !important;
-}
 
 i {
   cursor: pointer;
@@ -24,6 +21,7 @@ i:hover {
 
 .footer a {
   text-decoration: none;
+  color: rgb(191, 191, 191) !important;
 }
 
 a:hover {
@@ -32,6 +30,7 @@ a:hover {
 
 .footer button {
   border: 2px solid rgb(191, 191, 191);
+  color: rgb(191, 191, 191) !important;
 }
 
 .footer button:hover {
