@@ -3,6 +3,7 @@ import { Container } from "react-bootstrap";
 import Carousel from "better-react-carousel";
 import Error from "./Error";
 import Loading from "./Loading";
+// import SingleMovie from "./SingleMovie";
 
 class Gallery extends Component {
   state = {
@@ -53,3 +54,4 @@ class Gallery extends Component {
 }
 
 export default Gallery;
+//   <SingleMovie key={movie.imdbID} movie={movie.Poster} />

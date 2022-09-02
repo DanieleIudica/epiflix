@@ -57,3 +57,11 @@ a:hover {
   color: rgb(255, 255, 255) !important;
   cursor: pointer;
 }
+
+#nav-dropdown-dark-example {
+  border: 2px solid rgba(191, 191, 191, 0.633);
+}
+
+#nav-dropdown-dark-example:hover {
+  border: 2px solid rgba(255, 255, 255);
+}
