@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Card from "react-bootstrap/Card";
-import { Alert, Col, Container, Row, Spinner } from "react-bootstrap";
+import { Alert, Badge, Col, Row, Spinner } from "react-bootstrap";
 
 export default function MovieDetails(props) {
   const params = useParams();
@@ -26,6 +26,7 @@ export default function MovieDetails(props) {
       } catch (e) {}
     };
     funzione();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -37,6 +38,9 @@ export default function MovieDetails(props) {
             <Card.Body>
               <Card.Title>{movie.Title}</Card.Title>
               <Card.Text>{movie.Plot}</Card.Text>
+              <Card.Body>
+                Rating: <Badge bg="danger">{movie.imdbRating}</Badge>
+              </Card.Body>
             </Card.Body>
           </Card>
         ) : typeof movie === "undefined" ? (

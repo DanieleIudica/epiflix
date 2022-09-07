@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { Container } from "react-bootstrap";
+import { Button, Col, Container } from "react-bootstrap";
 import Carousel from "better-react-carousel";
 import Error from "./Error";
 import Loading from "./Loading";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 // import SingleMovie from "./SingleMovie";
 
 const Gallery = (props) => {
@@ -15,6 +15,7 @@ const Gallery = (props) => {
   const [movies, setMovie] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
+  const navigate = useNavigate();
 
   // componentDidMount() {
   //   this.fetchMovies();
@@ -59,8 +60,22 @@ const Gallery = (props) => {
           movies.Search.map((movie) => (
             <Carousel.Item key={movie.imdbID}>
               <Link to={"/moviedetails/" + movie.imdbID}>
-                <img className="h-100 poster" width="100%" src={movie.Poster} alt="" />
+                <img className="h-75 poster" width="100%" src={movie.Poster} alt="" />
               </Link>
+              <Col className="text-center">
+                <Button
+                  className="my-2"
+                  variant="outline-danger"
+                  size="sm"
+                  onClick={() => {
+                    setTimeout(() => {
+                      navigate("/moviedetails/" + movie.imdbID);
+                    }, 500);
+                  }}
+                >
+                  Vai
+                </Button>
+              </Col>
             </Carousel.Item>
           ))}
       </Carousel>
