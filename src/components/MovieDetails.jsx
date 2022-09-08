@@ -17,7 +17,7 @@ export default function MovieDetails(props) {
   useEffect(() => {
     const funzione = async () => {
       try {
-        let response = await fetch("http://www.omdbapi.com/?apikey=3bcbf89e&i=" + params.id);
+        let response = await fetch("https://www.omdbapi.com/?apikey=3bcbf89e&i=" + params.id);
         if (response.ok) {
           let data = await response.json();
           console.log(data);

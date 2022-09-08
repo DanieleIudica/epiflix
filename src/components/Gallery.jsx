@@ -27,7 +27,7 @@ const Gallery = (props) => {
 
   const fetchMovies = async () => {
     try {
-      let response = await fetch("http://www.omdbapi.com/?apikey=3bcbf89e&s=" + props.search);
+      let response = await fetch("https://www.omdbapi.com/?apikey=3bcbf89e&s=" + props.search);
       if (response.ok) {
         let data = await response.json();
         console.log(data);
